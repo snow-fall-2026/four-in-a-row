@@ -1,0 +1,14 @@
+:root { font-family: system-ui, sans-serif; color-scheme: light dark; }
+body { margin: 0; display: grid; place-items: center; min-height: 100vh; }
+form, .game { display: grid; gap: 12px; justify-items: center; }
+input, button { font: inherit; padding: 6px 10px; }
+.board { display: grid; grid-template-columns: repeat(7, 56px); gap: 6px; padding: 10px;
+         background: #2a5bd7; border-radius: 12px; }
+.column { display: grid; gap: 6px; border: 0; padding: 0; background: none; cursor: pointer; }
+.column:disabled { cursor: not-allowed; }
+.cell { width: 56px; height: 56px; border-radius: 50%; background: #e8eefc; }
+.cell.red { background: #e5383b; }
+.cell.yellow { background: #f5c518; }
+.cell.last { outline: 3px solid #111; outline-offset: -3px; }
+.status { min-height: 1.5em; font-weight: 600; }
+.error { color: #c1121f; min-height: 1.2em; }
